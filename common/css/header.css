@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/* 서울우유500ml */
+@font-face {
+  font-family: "seoulmilk-500ml";
+  src: url("../font/SEOULMILK 500mL TTF.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 서울우유1000ml */
+@font-face {
+  font-family: "seoulmilk-1000ml";
+  src: url("../font/SEOULMILK 1000mL TTF.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 100 */
+@font-face {
+  font-family: "s-core-100";
+  src: url("../font/SCDream1.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 200 */
+@font-face {
+  font-family: "s-core-200";
+  src: url("../font/SCDream2.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 300 */
+@font-face {
+  font-family: "s-core-300";
+  src: url("../font/SCDream3.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 400 */
+@font-face {
+  font-family: "s-core-400";
+  src: url("../font/SCDream4.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 500 */
+@font-face {
+  font-family: "s-core-500";
+  src: url("../font/SCDream5.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 600 */
+@font-face {
+  font-family: "s-core-600";
+  src: url("../font/SCDream6.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 700 */
+@font-face {
+  font-family: "s-core-700";
+  src: url("../font/SCDream7.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 800 */
+@font-face {
+  font-family: "s-core-800";
+  src: url("../font/SCDream8.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 900 */
+@font-face {
+  font-family: "s-core-900";
+  src: url("../font/SCDream9.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* variable css */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 87px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+header .container {
+  justify-content: space-between;
+  padding: 24px 0;
+  /* nav */
+}
+header .container .logo-box {
+  width: auto;
+  height: 100%;
+}
+header .container .logo-box a {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container .logo-box a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .container .category-box ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container .category-box ul li a span {
+  font-family: "s-core-500";
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #2a2a2a;
+}
+header .container .category-box ul li:not(:last-child) {
+  margin-right: 42px;
+}
+header .container .side-icon-box {
+  position: relative;
+  z-index: 2;
+  width: 132px;
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .container .side-icon-box ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container .side-icon-box ul li:not(:last-child) {
+  margin-right: 30px;
+}
+header .container .side-icon-box ul li.burger-wrap {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container .side-icon-box ul li.burger-wrap a.burger-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 22px;
+  position: relative;
+}
+header .container .side-icon-box ul li.burger-wrap a.burger-box span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #2a2a2a;
+  transition: all 0.4s ease;
+}
+header .container .side-icon-box ul li.burger-wrap a.burger-box span:nth-child(1) {
+  top: 6px;
+}
+header .container .side-icon-box ul li.burger-wrap a.burger-box span:nth-child(2) {
+  top: 14px;
+}
+header .container .side-icon-box ul li.burger-wrap a.burger-box.active span {
+  top: 10px !important;
+}
+header .container .side-icon-box ul li.burger-wrap a.burger-box.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+header .container .side-icon-box ul li.burger-wrap a.burger-box.active span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+header .container .side-icon-box.nav-white ul li a span.line {
+  background: #fff;
+}
+header .container nav.nav-menu-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  visibility: visible;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.6s ease-out;
+}
+header .container nav.nav-menu-wrap .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+header .container nav.nav-menu-wrap .container ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+header .container nav.nav-menu-wrap .container ul li a span.hover-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "s-core-300";
+  font-weight: 500;
+  font-size: 74px;
+  line-height: 1.3;
+  letter-spacing: -0.8px;
+  position: relative;
+  color: #fff;
+  transition: transform 0.2s ease-out;
+}
+header .container nav.nav-menu-wrap .container ul li a span.hover-text::before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 100%;
+}
+header .container nav.nav-menu-wrap.open {
+  background: rgb(68, 68, 68);
+  visibility: visible;
+  pointer-events: initial;
+  opacity: 1;
+  transition: all 0.6s ease-out;
+}
+
+@media (max-width: 450px) {
+  header {
+    height: auto;
+  }
+  header .container {
+    padding: 14px 16px;
+    /*  */
+    /* side-icon-box */
+    /* nav */
+  }
+  header .container .logo-box {
+    width: 240px;
+    height: auto;
+  }
+  header .container .logo-box a {
+    width: 100%;
+    height: auto;
+  }
+  header .container .category-box {
+    display: none;
+  }
+  header .container .side-icon-box {
+    display: flex;
+    width: auto;
+  }
+  header .container .side-icon-box ul li a {
+    width: 20px;
+    height: 20px;
+  }
+  header .container .side-icon-box ul li:not(:last-child) {
+    margin-right: 20px;
+  }
+  header .container nav.nav-menu-wrap .container ul li a span.hover-text {
+    font-size: 3rem;
+  }
+}

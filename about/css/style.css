@@ -1,0 +1,564 @@
+@charset "UTF-8";
+/* 서울우유500ml */
+@font-face {
+  font-family: "seoulmilk-500ml";
+  src: url("../font/SEOULMILK 500mL TTF.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 서울우유1000ml */
+@font-face {
+  font-family: "seoulmilk-1000ml";
+  src: url("../font/SEOULMILK 1000mL TTF.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 100 */
+@font-face {
+  font-family: "s-core-100";
+  src: url("../font/SCDream1.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 200 */
+@font-face {
+  font-family: "s-core-200";
+  src: url("../font/SCDream2.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 300 */
+@font-face {
+  font-family: "s-core-300";
+  src: url("../font/SCDream3.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 400 */
+@font-face {
+  font-family: "s-core-400";
+  src: url("../font/SCDream4.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 500 */
+@font-face {
+  font-family: "s-core-500";
+  src: url("../font/SCDream5.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 600 */
+@font-face {
+  font-family: "s-core-600";
+  src: url("../font/SCDream6.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 700 */
+@font-face {
+  font-family: "s-core-700";
+  src: url("../font/SCDream7.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 800 */
+@font-face {
+  font-family: "s-core-800";
+  src: url("../font/SCDream8.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 900 */
+@font-face {
+  font-family: "s-core-900";
+  src: url("../font/SCDream9.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* variable css */
+#wrap .main-banner-content-wrap {
+  background: url("../../common/img/main-banner-img01.png") no-repeat center center/cover;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+#wrap .main-banner-content-wrap .container .title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .main-banner-content-wrap .container .title-box h2.title {
+  font-family: "seoulmilk-1000ml";
+  font-size: 40px;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 14px;
+}
+#wrap .main-banner-content-wrap .container .title-box span {
+  font-family: "s-core-300";
+  font-size: 20px;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  color: #fff;
+}
+#wrap .program-about-content-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+#wrap .program-about-content-wrap .container .table-box {
+  width: 100%;
+}
+#wrap .program-about-content-wrap .container .table-box h2.title {
+  font-family: "s-core-800";
+  color: #79191C;
+  font-size: 24px;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  border-bottom: 1px solid #79191C;
+  padding-bottom: 18px;
+  padding-left: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#wrap .program-about-content-wrap .container .table-box h2.title::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 24px;
+  margin-right: 12px;
+  background: #79191C;
+}
+#wrap .program-about-content-wrap .container .table-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#wrap .program-about-content-wrap .container .table-box table tr {
+  border-bottom: 1px solid #909090;
+}
+#wrap .program-about-content-wrap .container .table-box table tr td {
+  padding: 26px 0;
+}
+#wrap .program-about-content-wrap .container .table-box table tr td span {
+  font-family: "s-core-300";
+  color: #2a2a2a;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-size: 18px;
+  display: block;
+}
+#wrap .program-about-content-wrap .container .table-box table tr td span b.point {
+  font-family: "s-core-700";
+  font-weight: normal;
+  position: relative;
+}
+#wrap .program-about-content-wrap .container .table-box table tr td span b.point::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 18px;
+  background: #2a2a2a;
+  transform: translateY(10%);
+  margin: 0 8px;
+}
+#wrap .program-about-content-wrap .container .table-box table tr td:not(:last-child) {
+  padding-left: 14px;
+}
+#wrap .program-about-content-wrap .container .table-box table tr td:first-child span {
+  font-family: "s-core-700";
+  color: #213B66;
+}
+#wrap .program-schedule-content-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+#wrap .program-schedule-content-wrap .container .table-box {
+  width: 100%;
+}
+#wrap .program-schedule-content-wrap .container .table-box h2.title {
+  font-family: "s-core-800";
+  color: #79191C;
+  font-size: 24px;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  border-bottom: 1px solid #79191C;
+  padding-bottom: 18px;
+  padding-left: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 28px;
+}
+#wrap .program-schedule-content-wrap .container .table-box h2.title::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 24px;
+  margin-right: 12px;
+  background: #79191C;
+}
+#wrap .program-schedule-content-wrap .container .table-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr th {
+  background: #79191C;
+  padding: 20px 0;
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr th span {
+  font-family: "s-core-900";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #fff;
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr th:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr td {
+  text-align: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #79191C;
+  position: relative;
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr td span {
+  font-family: "s-core-300";
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+  color: #2a2a2a;
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr td span.sub-cell {
+  border-left: 1px solid #79191C;
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr td table {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr td table tr td {
+  padding: 0;
+  border: none;
+  width: 70%;
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr td table tr td:not(:first-child) {
+  width: 30%;
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr td table tr td:not(:first-child) span {
+  font-family: "s-core-300" !important;
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr td.schedule-title {
+  background: #E7F2FB !important;
+  padding: 22px 0 !important;
+  border-right: none !important;
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr td.schedule-title span {
+  color: #1E3860 !important;
+  font-family: "s-core-900" !important;
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr td:first-child {
+  background: #F3F3F3;
+  width: 300px;
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr td:first-child span {
+  font-family: "s-core-700";
+}
+#wrap .program-schedule-content-wrap .container .table-box table tr td:not(:last-child) {
+  border-right: 1px solid #79191C;
+}
+#wrap .location-content-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+#wrap .location-content-wrap .container .table-box {
+  width: 100%;
+}
+#wrap .location-content-wrap .container .table-box h2.title {
+  font-family: "s-core-800";
+  color: #79191C;
+  font-size: 24px;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  border-bottom: 1px solid #79191C;
+  padding-bottom: 18px;
+  padding-left: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 28px;
+}
+#wrap .location-content-wrap .container .table-box h2.title::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 24px;
+  margin-right: 12px;
+  background: #79191C;
+}
+#wrap .location-content-wrap .container .table-box .map-content-wrap {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin: 44px 0;
+}
+#wrap .location-content-wrap .container .table-box .map-content-wrap .root_daum_roughmap.root_daum_roughmap_landing {
+  width: 100%;
+}
+#wrap .location-content-wrap .container .table-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#wrap .location-content-wrap .container .table-box table tr {
+  border-top: 1px solid #909090;
+}
+#wrap .location-content-wrap .container .table-box table tr td {
+  padding: 32px 14px;
+  vertical-align: top;
+  position: relative;
+}
+#wrap .location-content-wrap .container .table-box table tr td span {
+  font-family: "s-core-300";
+  color: #2a2a2a;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-size: 18px;
+  display: block;
+}
+#wrap .location-content-wrap .container .table-box table tr td ul li span span.numb {
+  display: inline-block;
+  border: 2px solid #006837;
+  border-radius: 300px;
+  font-size: 12px;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+}
+#wrap .location-content-wrap .container .table-box table tr td ul li span span.kind {
+  font-family: "s-core-600";
+}
+#wrap .location-content-wrap .container .table-box table tr td ul li span:first-child {
+  font-family: "s-core-600";
+}
+#wrap .location-content-wrap .container .table-box table tr td ul li:not(:last-child) {
+  margin-bottom: 40px;
+}
+#wrap .location-content-wrap .container .table-box table tr td:first-child span {
+  font-family: "s-core-700";
+  color: #213B66;
+}
+#wrap .location-content-wrap .container .table-box table tr td:not(:last-child) {
+  padding-left: 14px;
+}
+#wrap .location-content-wrap .container .table-box table tr:nth-child(2) td:nth-child(2)::before {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 32px;
+  left: -46px;
+  background: url("../img/icon-subway.svg") no-repeat center center/contain;
+}
+#wrap .location-content-wrap .container .table-box table tr:nth-child(3) td:nth-child(2)::before {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 32px;
+  left: -46px;
+  background: url("../img/icon-bus.svg") no-repeat center center/contain;
+}
+#wrap .location-content-wrap .container .table-box table tr:nth-child(4) td:nth-child(2)::before {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 32px;
+  left: -46px;
+  background: url("../img/icon-car.svg") no-repeat center center/contain;
+}
+#wrap .location-content-wrap .container .table-box table tr.bus td > span {
+  font-family: "s-core-600";
+  display: block;
+  margin-bottom: 18px;
+}
+#wrap .location-content-wrap .container .table-box table tr.bus td ul li span:first-child {
+  font-family: "s-core-300";
+}
+#wrap .location-content-wrap .container .table-box table tr.bus td ul li span.kind {
+  font-family: "s-core-600";
+  padding: 4px 18px;
+  border-radius: 300px;
+  background: #E9E9E9;
+  margin-right: 14px;
+}
+#wrap .location-content-wrap .container .table-box table tr.bus td ul li span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#wrap .location-content-wrap .container .table-box table tr.bus td ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+#wrap .location-content-wrap .container .table-box table tr.bus td ul:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+@media (max-width: 450px) {
+  #wrap .main-banner-content-wrap {
+    height: 240px;
+  }
+  #wrap .main-banner-content-wrap .container .title-box h2.title {
+    font-size: 28px;
+  }
+  #wrap .main-banner-content-wrap .container .title-box span {
+    font-size: 16px;
+  }
+  #wrap .program-about-content-wrap .container .table-box h2.title {
+    font-size: 16px;
+    padding-left: 0;
+  }
+  #wrap .program-about-content-wrap .container .table-box h2.title::before {
+    height: 16px;
+    margin-right: 8px;
+  }
+  #wrap .program-about-content-wrap .container .table-box table tr td {
+    text-align: center;
+  }
+  #wrap .program-about-content-wrap .container .table-box table tr td span {
+    font-size: 14px;
+    word-break: keep-all;
+  }
+  #wrap .program-about-content-wrap .container .table-box table tr td span b.point::after {
+    height: 12px;
+    margin: 0 4px;
+  }
+  #wrap .program-about-content-wrap .container .table-box table tr td:not(:last-child) {
+    padding-left: 0;
+  }
+  #wrap .program-schedule-content-wrap .container .table-box h2.title {
+    font-size: 16px;
+    padding-left: 0;
+  }
+  #wrap .program-schedule-content-wrap .container .table-box h2.title::before {
+    height: 16px;
+    margin-right: 8px;
+  }
+  #wrap .program-schedule-content-wrap .container .table-box table tr th {
+    padding: 16px 0;
+  }
+  #wrap .program-schedule-content-wrap .container .table-box table tr th span {
+    font-size: 14px;
+  }
+  #wrap .program-schedule-content-wrap .container .table-box table tr td span {
+    font-size: 14px;
+    word-break: keep-all;
+  }
+  #wrap .program-schedule-content-wrap .container .table-box table tr td table tr td {
+    padding: 0px 0;
+  }
+  #wrap .program-schedule-content-wrap .container .table-box table tr td.schedule-title {
+    padding: 16px 0 !important;
+  }
+  #wrap .program-schedule-content-wrap .container .table-box table tr td:first-child {
+    width: 100px;
+  }
+  #wrap .location-content-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+  }
+  #wrap .location-content-wrap .container .table-box {
+    width: 100%;
+  }
+  #wrap .location-content-wrap .container .table-box h2.title {
+    font-size: 16px;
+    padding-left: 0;
+  }
+  #wrap .location-content-wrap .container .table-box h2.title::before {
+    height: 16px;
+    margin-right: 8px;
+  }
+  #wrap .location-content-wrap .container .table-box .map-content-wrap {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin: 44px 0;
+  }
+  #wrap .location-content-wrap .container .table-box .map-content-wrap .root_daum_roughmap.root_daum_roughmap_landing {
+    width: 100%;
+  }
+  #wrap .location-content-wrap .container .table-box table tr td {
+    padding: 16px 0;
+  }
+  #wrap .location-content-wrap .container .table-box table tr td span {
+    font-size: 14px;
+  }
+  #wrap .location-content-wrap .container .table-box table tr td ul li span span.numb {
+    font-size: 10px;
+    width: 17px;
+    height: 17px;
+  }
+  #wrap .location-content-wrap .container .table-box table tr td ul li:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  #wrap .location-content-wrap .container .table-box table tr td:first-child {
+    width: 20%;
+  }
+  #wrap .location-content-wrap .container .table-box table tr td:not(:last-child) {
+    padding-left: 0;
+  }
+  #wrap .location-content-wrap .container .table-box table tr td:last-child {
+    padding: 16px 16px;
+  }
+  #wrap .location-content-wrap .container .table-box table tr:nth-child(2) td:nth-child(2)::before {
+    width: 26px;
+    height: 26px;
+    top: 18px;
+    left: -20px;
+  }
+  #wrap .location-content-wrap .container .table-box table tr:nth-child(3) td:nth-child(2)::before {
+    width: 26px;
+    height: 26px;
+    top: 18px;
+    left: -20px;
+  }
+  #wrap .location-content-wrap .container .table-box table tr:nth-child(4) td:nth-child(2)::before {
+    width: 26px;
+    height: 26px;
+    top: 18px;
+    left: -20px;
+  }
+  #wrap .location-content-wrap .container .table-box table tr.bus td ul li span:first-child {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #wrap .location-content-wrap .container .table-box table tr.bus td ul li:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  #wrap .location-content-wrap .container .table-box table tr.bus td ul:not(:last-child) {
+    margin-bottom: 34px;
+  }
+}

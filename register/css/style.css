@@ -1,0 +1,438 @@
+@charset "UTF-8";
+/* 서울우유500ml */
+@font-face {
+  font-family: "seoulmilk-500ml";
+  src: url("../font/SEOULMILK 500mL TTF.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 서울우유1000ml */
+@font-face {
+  font-family: "seoulmilk-1000ml";
+  src: url("../font/SEOULMILK 1000mL TTF.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 100 */
+@font-face {
+  font-family: "s-core-100";
+  src: url("../font/SCDream1.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 200 */
+@font-face {
+  font-family: "s-core-200";
+  src: url("../font/SCDream2.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 300 */
+@font-face {
+  font-family: "s-core-300";
+  src: url("../font/SCDream3.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 400 */
+@font-face {
+  font-family: "s-core-400";
+  src: url("../font/SCDream4.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 500 */
+@font-face {
+  font-family: "s-core-500";
+  src: url("../font/SCDream5.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 600 */
+@font-face {
+  font-family: "s-core-600";
+  src: url("../font/SCDream6.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 700 */
+@font-face {
+  font-family: "s-core-700";
+  src: url("../font/SCDream7.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 800 */
+@font-face {
+  font-family: "s-core-800";
+  src: url("../font/SCDream8.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 900 */
+@font-face {
+  font-family: "s-core-900";
+  src: url("../font/SCDream9.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* variable css */
+#wrap .main-banner-content-wrap {
+  background: url("../img/main-banner-img01.png") no-repeat center center/cover;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+#wrap .main-banner-content-wrap .container .title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .main-banner-content-wrap .container .title-box h2.title {
+  font-family: "seoulmilk-1000ml";
+  font-size: 40px;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 14px;
+}
+#wrap .main-banner-content-wrap .container .title-box span {
+  font-family: "s-core-300";
+  font-size: 20px;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  color: #fff;
+}
+#wrap .button-banner-content-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .button-banner-content-wrap .container {
+  justify-content: space-between;
+}
+#wrap .button-banner-content-wrap .container .button-banner-box {
+  width: 48%;
+  height: 260px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 24px 28px;
+}
+#wrap .button-banner-content-wrap .container .button-banner-box .title-box h3.title {
+  font-family: "s-core-500";
+  color: #79191C;
+  font-size: 24px;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#wrap .button-banner-content-wrap .container .button-banner-box .title-box h3.title::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -24px;
+}
+#wrap .button-banner-content-wrap .container .button-banner-box .title-box span {
+  font-family: "s-core-300";
+  color: #213B66;
+  font-size: 20px;
+  letter-spacing: -0.8px;
+  line-height: 1;
+}
+#wrap .button-banner-content-wrap .container .button-banner-box.workshop {
+  background: url("../img/workshop-button-banner-img.png") no-repeat center center/cover;
+}
+#wrap .button-banner-content-wrap .container .button-banner-box.workshop h3.title {
+  color: #79191C;
+}
+#wrap .button-banner-content-wrap .container .button-banner-box.workshop h3.title::after {
+  background: url("../img/workshop-button-arrow.svg") no-repeat center center/contain;
+}
+#wrap .button-banner-content-wrap .container .button-banner-box.workshop span {
+  color: #79191C;
+}
+#wrap .button-banner-content-wrap .container .button-banner-box.qna {
+  background: url("../img/qna-button-banner-img.png") no-repeat center center/cover;
+}
+#wrap .button-banner-content-wrap .container .button-banner-box.qna h3.title {
+  color: #213B66;
+}
+#wrap .button-banner-content-wrap .container .button-banner-box.qna h3.title::after {
+  background: url("../img/qna-button-arrow.svg") no-repeat center center/contain;
+}
+#wrap .button-banner-content-wrap .container .button-banner-box.qna span {
+  color: #213B66;
+}
+#wrap .form-section-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .form-section-wrap .container {
+  max-width: 1000px;
+}
+#wrap .form-section-wrap .container form {
+  width: 100%;
+}
+#wrap .form-section-wrap .container form .regFormFrame {
+  padding: 0;
+  background: transparent;
+  overflow: unset;
+}
+#wrap .form-section-wrap .container form .regFormFrame > h2, #wrap .form-section-wrap .container form .regFormFrame p {
+  display: none;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormList {
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: unset;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormList ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormList ul li {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  line-height: unset;
+  min-height: auto;
+  padding-bottom: 34px;
+  overflow: unset;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormList ul li span.req {
+  font-family: "s-core-400";
+  font-size: 16px;
+  letter-spacing: -0.8px;
+  position: relative;
+  top: auto;
+  left: auto;
+  padding: 0;
+  width: auto;
+  height: auto;
+  color: #2a2a2a;
+  line-height: 1;
+  font-weight: normal;
+  margin-bottom: 14px;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormList ul li span.req::before {
+  left: -14px;
+  font-size: 12px;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormList ul li input {
+  max-width: none;
+  border-radius: 8px;
+  height: 62px;
+  font-size: 16px;
+  letter-spacing: -0.8px;
+  line-height: 1.4;
+  color: #2a2a2a;
+  border: 1px solid #e9e9e9;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormList ul li input::-moz-placeholder {
+  color: #bbb;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormList ul li input::placeholder {
+  color: #bbb;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormList ul li textarea {
+  max-width: none;
+  border-radius: 8px;
+  border: 1px solid #e9e9e9;
+  letter-spacing: -0.8px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #2a2a2a;
+  padding: 14px;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormList ul li.download {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormList ul li.download a.download {
+  border-radius: 300px;
+  background: #79191C;
+  padding: 28px 22px;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormList ul li.download a.download span {
+  font-family: "s-core-400";
+  font-size: 16px;
+  letter-spacing: -0.8px;
+  position: relative;
+  top: auto;
+  left: auto;
+  padding: 0;
+  width: auto;
+  height: auto;
+  color: #fff;
+  line-height: 1;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormList ul li.textarea {
+  display: none;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormAgree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormAgree label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "s-core-300";
+  font-size: 14px;
+  color: #2a2a2a;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  margin-right: 24px;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormAgree label input {
+  font-size: 14px;
+  line-height: 1;
+  margin-right: 6px;
+}
+#wrap .form-section-wrap .container form .regFormFrame .regFormAgree .btn.privacyView {
+  line-height: 1;
+  height: auto;
+  font-weight: normal;
+  padding: 8px 16px;
+  font-family: "s-core-300";
+  letter-spacing: -0.8px;
+  color: #fff;
+  font-size: 14px;
+  background: #999;
+  border-radius: 4px;
+}
+#wrap .form-list-section-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .form-list-section-wrap .container {
+  max-width: 1000px;
+  flex-direction: column;
+}
+#wrap .form-list-section-wrap .container #bo_list #bo_btn_top {
+  display: none;
+}
+#wrap .form-list-section-wrap .container #bo_list form {
+  width: 100%;
+}
+#wrap .form-list-section-wrap .container #bo_list form table thead tr th {
+  font-family: "s-core-400";
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.8px;
+  color: #2a2a2a;
+}
+#wrap .form-list-section-wrap .container #bo_list form table tbody tr td {
+  font-family: "s-core-300";
+  color: #2a2a2a;
+  font-size: 14px;
+  letter-spacing: -0.8px;
+}
+#wrap .form-list-section-wrap .container #bo_list form table tbody tr td td.bo_tit {
+  font-weight: normal;
+  font-family: "s-core-400";
+}
+#wrap .form-list-section-wrap .container #bo_list form .bo_fx {
+  display: none;
+}
+#wrap .form-list-section-wrap .container .pg_wrap {
+  margin-top: 60px;
+}
+#wrap .form-list-section-wrap .container .excel-download {
+  position: fixed;
+  right: 4%;
+  bottom: 4%;
+}
+#wrap .form-list-section-wrap .container .excel-download a {
+  font-family: "s-core-400";
+  font-size: 16px;
+  letter-spacing: -0.8px;
+}
+#wrap .form-view-section-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .form-view-section-wrap .container {
+  max-width: 1000px;
+}
+
+@media (max-width: 450px) {
+  #wrap .main-banner-content-wrap {
+    height: 240px;
+    margin-bottom: 60px;
+  }
+  #wrap .main-banner-content-wrap .container .title-box h2.title {
+    font-size: 28px;
+  }
+  #wrap .main-banner-content-wrap .container .title-box span {
+    font-size: 16px;
+  }
+  #wrap .button-banner-content-wrap .container {
+    flex-direction: column;
+  }
+  #wrap .button-banner-content-wrap .container .button-banner-box {
+    width: 100%;
+    height: 160px;
+  }
+  #wrap .button-banner-content-wrap .container .button-banner-box .title-box h3.title {
+    font-size: 18px;
+  }
+  #wrap .button-banner-content-wrap .container .button-banner-box .title-box h3.title::after {
+    width: 16px;
+    height: 16px;
+    right: -22px;
+  }
+  #wrap .button-banner-content-wrap .container .button-banner-box .title-box span {
+    font-size: 16px;
+  }
+  #wrap .button-banner-content-wrap .container .button-banner-box.workshop {
+    margin-bottom: 24px;
+  }
+  #wrap .form-section-wrap .container form .regFormFrame .regFormList ul li {
+    padding-bottom: 24px;
+  }
+  #wrap .form-section-wrap .container form .regFormFrame .regFormList ul li span.req {
+    font-size: 14px;
+  }
+  #wrap .form-section-wrap .container form .regFormFrame .regFormList ul li span.req::before {
+    left: -10px;
+  }
+  #wrap .form-section-wrap .container form .regFormFrame .regFormList ul li input {
+    height: 40px;
+    font-size: 14px;
+  }
+  #wrap .form-section-wrap .container form .regFormFrame .regFormList ul li.download a.download {
+    padding: 24px 16px;
+  }
+  #wrap .form-section-wrap .container form .regFormFrame .regFormList ul li.download a.download span {
+    font-size: 14px;
+  }
+}

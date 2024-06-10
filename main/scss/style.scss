@@ -1,0 +1,439 @@
+/* 서울우유500ml */
+@font-face {
+    font-family: 'seoulmilk-500ml';
+    src: url('../font/SEOULMILK\ 500mL\ TTF.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 서울우유1000ml */
+@font-face {
+    font-family: 'seoulmilk-1000ml';
+    src: url('../font/SEOULMILK\ 1000mL\ TTF.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* s-core 100 */
+@font-face {
+    font-family: 's-core-100';
+    src: url('../font/SCDream1.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 200 */
+@font-face {
+    font-family: 's-core-200';
+    src: url('../font/SCDream2.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 300 */
+@font-face {
+    font-family: 's-core-300';
+    src: url('../font/SCDream3.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 400 */
+@font-face {
+    font-family: 's-core-400';
+    src: url('../font/SCDream4.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 500 */
+@font-face {
+    font-family: 's-core-500';
+    src: url('../font/SCDream5.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 600 */
+@font-face {
+    font-family: 's-core-600';
+    src: url('../font/SCDream6.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 700 */
+@font-face {
+    font-family: 's-core-700';
+    src: url('../font/SCDream7.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 800 */
+@font-face {
+    font-family: 's-core-800';
+    src: url('../font/SCDream8.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 900 */
+@font-face {
+    font-family: 's-core-900';
+    src: url('../font/SCDream9.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* variable css */
+$font-s-core-100: 's-core-100';
+$font-s-core-200: 's-core-200';
+$font-s-core-300: 's-core-300';
+$font-s-core-400: 's-core-400';
+$font-s-core-500: 's-core-500';
+$font-s-core-600: 's-core-600';
+$font-s-core-700: 's-core-700';
+$font-s-core-800: 's-core-800';
+$font-s-core-900: 's-core-900';
+$font-seoulmilk-500: 'seoulmilk-500ml';
+$font-seoulmilk-1000: 'seoulmilk-1000ml';
+$color-black: #2a2a2a;
+$color-main: #79191C;
+$color-sub: #213B66;
+
+#wrap {
+    padding: 0;
+    .main-banner-content-wrap {
+        background: url('../../main/img/main-banner-img01.png') no-repeat center center / cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 500px;
+        .container {
+            justify-content: space-around;
+            // align-items: flex-end;
+            height: 380px;
+            align-items: flex-end;
+            .main-title-box {
+                // border: 1px solid red;
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                span.year {
+                    font-family: $font-seoulmilk-1000;
+                    font-weight: normal;
+                    font-size: 42px;
+                    letter-spacing: -.8px;
+                    line-height: 1;
+                    color: $color-main;
+                    display: block;
+                    margin-bottom: 28px;
+
+                }
+                h2.title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 54px;
+                    span {
+                        font-family: $font-seoulmilk-1000;
+                        font-weight: normal;
+                        font-size: 66px;
+                        line-height: 1.2;
+                        letter-spacing: -.8px;
+                        color: $color-sub;
+                    }
+                    span.point {
+                        font-size: 76px;
+                        color: $color-main;
+                    }
+                }
+                .btn-box {
+                    width: 100%;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: $color-main;
+                        border-radius: 12px;
+                        width: 100%;
+                        padding: 22px 0;
+                        span {
+                            font-family: $font-s-core-800;
+                            color: #D88491;
+                            letter-spacing: -.8px;
+                            line-height: 1;
+                            font-size: 22px;
+                            display: block;
+                            margin-right: 8px;
+                        }
+                        span.point {
+                            color: #fff;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .icon-box {
+                                width: 20px;
+                                height: 20px;
+                                display: flex;
+                                align-items: center;
+                                justify-items: center;
+                                margin-left: 14px;
+                                img {
+                                    // width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main-detail-box {
+                width: 40%;
+                .date-box {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    border-top: 1px solid #773419;
+                    border-bottom: 1px solid #773419;
+                    padding: 12px 0;
+                    margin-bottom: 30px;
+                    span.year {
+                        font-family: $font-s-core-500;
+                        color: #773419;
+                        font-size: 33px;
+                        line-height: 1;
+                        display: flex;
+                        align-items: flex-end;
+                    }
+                    span.date {
+                        font-family: $font-s-core-900;
+                        font-size: 52px;
+                        color: $color-main;
+                        letter-spacing: -4px;
+                        line-height: 1;
+                    }
+                    span.day {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 27px;
+                        height: 27px;
+                        background: $color-sub;
+                        border-radius: 300px;
+                        font-family: $font-s-core-500;
+                        font-size: 14px;
+                        line-height: 1;
+                        color: #fff;
+                    }
+                }
+
+                .location-box {
+                    width: 100%;
+                    padding: 0 24px;
+                    background: #fff;
+                    border-radius: 12px;
+                    margin-bottom: 28px;
+                    .location-item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        padding: 18px 0;
+                        span.title {
+                            font-family: $font-seoulmilk-1000;
+                            font-weight: normal;
+                            font-size: 26px;
+                            letter-spacing: -.8px;
+                            line-height: 1;
+                            color: $color-main;
+                            display: block;
+                        }
+                        .detail {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            width: 360px;
+                            span {
+                                font-family: $font-s-core-500;
+                                font-size: 24px;
+                                letter-spacing: -.8px;
+                                line-height: 1;
+                                color: $color-sub;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            span.point {
+                                font-family: $font-s-core-900;
+                                letter-spacing: -2px;
+                                margin-right: 18px;
+                            }
+                            span.day {
+                                display: block;
+                                width: 28px;
+                                height: 28px;
+                                background: $color-sub;
+                                border-radius: 300px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-family: $font-s-core-800;
+                                font-size: 14px;
+                                line-height: 1;
+                                color: #fff;
+                                margin-right: 10px;
+                            }
+                            span:last-child::before {
+                                content: '';
+                                display: block;
+                                width: 2px;
+                                height: 24px;
+                                background: $color-sub;
+                                margin-right: 14px;
+                            }
+                        }
+                    }
+                    .location-item:not(:last-child) {
+                        border-bottom: 1px solid $color-sub;
+                    }
+                }
+
+                .partner-box {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    span.title {
+                        font-family: $font-s-core-800;
+                        font-size: 16px;
+                        line-height: 1;
+                        letter-spacing: -.8px;
+                        color: $color-main;
+                    }
+                    .partner-logo-wrap {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        .logo-box {
+                            width: auto;
+                            height: 32px;
+                            img {
+                                height: 100%;
+                            }
+                        }
+                        .logo-box:not(:last-child) {
+                            // margin-right: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media ( max-width: 450px ) {
+    #wrap {
+        padding-top: 68px;
+        .main-banner-content-wrap {
+            .container{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0 16px;
+                height: auto;
+
+                .main-title-box {
+                    width: 100%;
+                    margin-bottom: 80px;
+                    span.year {
+                        font-size: 28px;
+                        margin-bottom: 14px;
+                    }
+                    h2.title {
+                        margin-bottom: 24px;
+                        span {
+                            font-size: 32px;
+                        }
+                        span.point {
+                            font-size: 42px;
+                        }
+                    }
+                    .btn-box {
+                        a {
+                            padding: 16px 0;
+                            span {
+                                font-size: 16px;
+                                font-family: $font-s-core-600;
+                            }
+                        }
+                    }
+                }
+
+                .main-detail-box {
+                    width: 100%;
+                    .date-box {
+                        span.year {
+                            font-size: 24px;
+                        }
+                        span.date {
+                            font-size: 32px;
+                            letter-spacing: -2px;
+                        }
+                        span.day {
+                            margin-right: 8px;
+                            font-family: $font-s-core-400;
+                        }
+                    }
+
+                    .location-box {
+                        .location-item {
+                            span.title {
+                                font-size: 16px;
+                            }
+                            .detail {
+                                width: 240px;
+                                span {
+                                    font-size: 16px;
+                                }
+                                span.point {
+                                    margin-right: 8px;
+                                }
+                                span.day {
+                                    width: 22px;
+                                    height: 22px;
+                                    font-family: $font-s-core-400;
+                                }
+                                span:last-child::before {
+                                }
+                            }
+                        }
+                        .location-item:not(:last-child) {
+                        }
+                    }
+
+                    .partner-box {
+                        flex-direction: column;
+                        span.title {
+                            font-size: 14px;
+                            margin-bottom: 16px;
+                        }
+                        .partner-logo-wrap {
+                            width: 100%;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            .logo-box {
+                                height: 42px;
+                                margin: 0;
+                                padding: 8px 8px;
+                                img {
+                                }
+                            }
+                            .logo-box:not(:last-child) {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

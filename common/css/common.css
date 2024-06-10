@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* 서울우유500ml */
+@font-face {
+  font-family: "seoulmilk-500ml";
+  src: url("../font/SEOULMILK 500mL TTF.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 서울우유1000ml */
+@font-face {
+  font-family: "seoulmilk-1000ml";
+  src: url("../font/SEOULMILK 1000mL TTF.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 100 */
+@font-face {
+  font-family: "s-core-100";
+  src: url("../font/SCDream1.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 200 */
+@font-face {
+  font-family: "s-core-200";
+  src: url("../font/SCDream2.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 300 */
+@font-face {
+  font-family: "s-core-300";
+  src: url("../font/SCDream3.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 400 */
+@font-face {
+  font-family: "s-core-400";
+  src: url("../font/SCDream4.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 500 */
+@font-face {
+  font-family: "s-core-500";
+  src: url("../font/SCDream5.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 600 */
+@font-face {
+  font-family: "s-core-600";
+  src: url("../font/SCDream6.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 700 */
+@font-face {
+  font-family: "s-core-700";
+  src: url("../font/SCDream7.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 800 */
+@font-face {
+  font-family: "s-core-800";
+  src: url("../font/SCDream8.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* s-core 900 */
+@font-face {
+  font-family: "s-core-900";
+  src: url("../font/SCDream9.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* variable css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+#wrap {
+  padding-top: 87px;
+  min-height: 100vh;
+}
+
+.container {
+  width: 1440px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 450px) {
+  #wrap {
+    padding-top: 68px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+}

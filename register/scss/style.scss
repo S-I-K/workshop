@@ -1,0 +1,584 @@
+/* 서울우유500ml */
+@font-face {
+    font-family: 'seoulmilk-500ml';
+    src: url('../font/SEOULMILK\ 500mL\ TTF.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 서울우유1000ml */
+@font-face {
+    font-family: 'seoulmilk-1000ml';
+    src: url('../font/SEOULMILK\ 1000mL\ TTF.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* s-core 100 */
+@font-face {
+    font-family: 's-core-100';
+    src: url('../font/SCDream1.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 200 */
+@font-face {
+    font-family: 's-core-200';
+    src: url('../font/SCDream2.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 300 */
+@font-face {
+    font-family: 's-core-300';
+    src: url('../font/SCDream3.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 400 */
+@font-face {
+    font-family: 's-core-400';
+    src: url('../font/SCDream4.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 500 */
+@font-face {
+    font-family: 's-core-500';
+    src: url('../font/SCDream5.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 600 */
+@font-face {
+    font-family: 's-core-600';
+    src: url('../font/SCDream6.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 700 */
+@font-face {
+    font-family: 's-core-700';
+    src: url('../font/SCDream7.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 800 */
+@font-face {
+    font-family: 's-core-800';
+    src: url('../font/SCDream8.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* s-core 900 */
+@font-face {
+    font-family: 's-core-900';
+    src: url('../font/SCDream9.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* variable css */
+$font-s-core-100: 's-core-100';
+$font-s-core-200: 's-core-200';
+$font-s-core-300: 's-core-300';
+$font-s-core-400: 's-core-400';
+$font-s-core-500: 's-core-500';
+$font-s-core-600: 's-core-600';
+$font-s-core-700: 's-core-700';
+$font-s-core-800: 's-core-800';
+$font-s-core-900: 's-core-900';
+$font-seoulmilk-500: 'seoulmilk-500ml';
+$font-seoulmilk-1000: 'seoulmilk-1000ml';
+$color-black: #2a2a2a;
+$color-main: #79191C;
+$color-sub: #213B66;
+
+
+#wrap {
+    .main-banner-content-wrap {
+        background: url('../img/main-banner-img01.png') no-repeat center center / cover;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+        .container {
+            .title-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h2.title {
+                    font-family: $font-seoulmilk-1000;
+                    font-size: 40px;
+                    letter-spacing: -.8px;
+                    line-height: 1;
+                    color: #fff;
+                    margin-bottom: 14px;
+                }
+                span {
+                    font-family: $font-s-core-300;
+                    font-size: 20px;
+                    letter-spacing: -.8px;
+                    line-height: 1;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .button-banner-content-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container {
+            // border: 1px solid red;
+            justify-content: space-between;
+            .button-banner-box {
+                // border: 1px solid red;
+                width: 48%;
+                height: 260px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 24px 28px;
+                .title-box {
+                    h3.title {
+                        font-family: $font-s-core-500;
+                        color: #79191C;
+                        font-size: 24px;
+                        letter-spacing: -.8px;
+                        line-height: 1;
+                        margin-bottom: 10px;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                    }
+                    h3.title::after {
+                        content: '';
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        right: -24px;
+                    }
+                    span {
+                        font-family: $font-s-core-300;
+                        color: #213B66;
+                        font-size: 20px;
+                        letter-spacing: -.8px;
+                        line-height: 1;
+                    }
+                }
+            }
+            .button-banner-box.workshop {
+                background: url('../img/workshop-button-banner-img.png') no-repeat center center / cover;
+                h3.title {
+                    color: #79191C;
+                }
+                h3.title::after {
+                    background: url('../img/workshop-button-arrow.svg') no-repeat center center / contain;
+                }
+                span {
+                    color: #79191C;
+                }
+            }
+            .button-banner-box.qna {
+                background: url('../img/qna-button-banner-img.png') no-repeat center center / cover;
+                h3.title {
+                    color: #213B66;
+                }
+                h3.title::after {
+                    background: url('../img/qna-button-arrow.svg') no-repeat center center / contain;
+                }
+                span {
+                    color: #213B66;
+                }
+            }
+        }
+    }
+
+    .form-section-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container {
+            max-width: 1000px;
+            form {
+                width: 100%;
+                .regFormFrame {
+                    padding: 0;
+                    background: transparent;
+                    overflow: unset;
+                    > h2,p {
+                        display: none;
+                    }
+
+                    .regFormList {
+                        padding: 0;
+                        margin: 0;
+                        border: none;
+                        overflow: unset;
+                        ul {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            li {
+                                width: 48%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: center;
+                                padding: 0;
+                                margin: 0;
+                                line-height: unset;
+                                min-height: auto;
+                                padding-bottom: 34px;
+                                overflow: unset;
+                                span.req {
+                                    font-family: $font-s-core-400;
+                                    font-size: 16px;
+                                    letter-spacing: -.8px;
+                                    position: relative;
+                                    top: auto;
+                                    left: auto;
+                                    padding: 0;
+                                    width: auto;
+                                    height: auto;
+                                    color: $color-black;
+                                    line-height: 1;
+                                    font-weight: normal;
+                                    margin-bottom: 14px;
+                                }
+                                span.req::before {
+                                    left: -14px;
+                                    font-size: 12px;
+                                }
+    
+                                input {
+                                    max-width: none;
+                                    border-radius: 8px;
+                                    height: 62px;
+                                    font-size: 16px;
+                                    letter-spacing: -.8px;
+                                    line-height: 1.4;
+                                    color: $color-black;
+                                    border: 1px solid #e9e9e9;
+                                }
+                                input::placeholder {
+                                    color: #bbb;
+                                }
+
+                                textarea {
+                                    max-width: none;
+                                    border-radius: 8px;
+                                    border: 1px solid #e9e9e9;
+                                    letter-spacing: -.8px;
+                                    font-size: 16px;
+                                    line-height: 1.4;
+                                    color: $color-black;
+                                    padding: 14px;
+                                }
+
+                            }
+
+                            li.download {
+                                width: 100%;
+                                align-items: center;
+                                justify-content: center;
+                                a.download {
+                                    border-radius: 300px;
+                                    background: $color-main;
+                                    padding: 28px 22px;
+                                    span {
+                                        font-family: $font-s-core-400;
+                                        font-size: 16px;
+                                        letter-spacing: -.8px;
+                                        position: relative;
+                                        top: auto;
+                                        left: auto;
+                                        padding: 0;
+                                        width: auto;
+                                        height: auto;
+                                        color: #fff;
+                                        line-height: 1;
+                                        font-weight: normal;
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+
+                            li.textarea {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .regFormAgree {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        label {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-family: $font-s-core-300;
+                            font-size: 14px;
+                            color: $color-black;
+                            letter-spacing: -.8px;
+                            line-height: 1;
+                            margin-right: 24px;
+                            input {
+                                font-size: 14px;
+                                line-height: 1;
+                                margin-right: 6px;
+                            }
+                        }
+                        .btn.privacyView {
+                            line-height: 1;
+                            height: auto;
+                            font-weight: normal;
+                            padding: 8px 16px;
+                            font-family: $font-s-core-300;
+                            letter-spacing: -.8px;
+                            color: #fff;
+                            font-size: 14px;
+                            background: #999;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .form-list-section-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container {
+            max-width: 1000px;
+            flex-direction: column;
+            #bo_list {
+                #bo_btn_top {
+                    display: none;
+                }
+
+                form {
+                    width: 100%;
+                    table {
+                        thead {
+                            tr {
+                                th {
+                                    font-family: $font-s-core-400;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    letter-spacing: -.8px;
+                                    color: $color-black;
+                                }
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                td {
+                                    font-family: $font-s-core-300;
+                                    color: $color-black;
+                                    font-size: 14px;
+                                    letter-spacing: -.8px;
+                                    td.bo_tit {
+                                        font-weight: normal;
+                                        font-family: $font-s-core-400;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .bo_fx {
+                        display: none;
+                    }
+                }
+            }
+
+            .pg_wrap {
+                margin-top: 60px;
+            }
+
+            .excel-download {
+                position: fixed;
+                right: 4%;
+                bottom: 4%;
+                a {
+                    font-family: $font-s-core-400;
+                    font-size: 16px;
+                    letter-spacing: -.8px;
+
+                }
+            }
+        }
+    }
+
+    .form-view-section-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container {
+            max-width: 1000px;
+        }
+    }
+}
+
+@media ( max-width: 450px ) {
+    #wrap {
+        .main-banner-content-wrap {
+            height: 240px;
+            margin-bottom: 60px;
+            .container {
+                .title-box {
+                    h2.title {
+                        font-size: 28px;
+                    }
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .button-banner-content-wrap {
+            .container {
+                flex-direction: column;
+                .button-banner-box {
+                    width: 100%;
+                    height: 160px;
+                    .title-box {
+                        h3.title {
+                            font-size: 18px;
+                        }
+                        h3.title::after {
+                            width: 16px;
+                            height: 16px;
+                            right: -22px;
+                        }
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .button-banner-box.workshop {
+                    margin-bottom: 24px;
+                    h3.title {
+                    }
+                    h3.title::after {
+                    }
+                    span {
+                    }
+                }
+                .button-banner-box.qna {
+                    h3.title {
+                    }
+                    h3.title::after {
+                    }
+                    span {
+                    }
+                }
+            }
+        }
+
+        .form-section-wrap {
+            .container {
+                form {
+                    .regFormFrame {
+                        > h2,p {
+                        }
+    
+                        .regFormList {
+                            ul {
+                                li {
+                                    padding-bottom: 24px;
+                                    span.req {
+                                        font-size: 14px;
+                                    }
+                                    span.req::before {
+                                        left: -10px;
+                                    }
+        
+                                    input {
+                                        height: 40px;
+                                        font-size: 14px;
+                                    }
+                                    input::placeholder {
+                                    }
+    
+                                    textarea {
+                                    }
+    
+                                }
+    
+                                li.download {
+                                    a.download {
+                                        padding: 24px 16px;
+                                        span {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        .regFormAgree {
+                            label {
+                                input {
+                                }
+                            }
+                            .btn.privacyView {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .form-list-section-wrap {
+            .container {
+                #bo_list {
+                    #bo_btn_top {
+                    }
+    
+                    form {
+                        table {
+                            thead {
+                                tr {
+                                    th {
+                                    }
+                                }
+                            }
+    
+                            tbody {
+                                tr {
+                                    td {
+                                        td.bo_tit {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .pg_wrap {
+                }
+    
+                .excel-download {
+                    a {    
+                    }
+                }
+            }
+        }
+    }
+}
